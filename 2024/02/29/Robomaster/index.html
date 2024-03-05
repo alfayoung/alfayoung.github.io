@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="To better understand the rules, you may watch our match first I&#39;m part of the Vision Division within the Robomaster Club of Shanghai Jiao Tong University, where I have actively contributed to seve">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Robomaster Projects">
+<meta property="og:url" content="http://example.com/2024/02/29/Robomaster/index.html">
+<meta property="og:site_name" content="Cunxin Fan&#39;s Blog">
+<meta property="og:description" content="To better understand the rules, you may watch our match first I&#39;m part of the Vision Division within the Robomaster Club of Shanghai Jiao Tong University, where I have actively contributed to seve">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/assets/images/Robomaster/Sentry-Architecture.png">
+<meta property="article:published_time" content="2024-02-29T04:00:00.000Z">
+<meta property="article:modified_time" content="2024-03-05T05:30:59.209Z">
+<meta property="article:author" content="Cunxin Fan">
+<meta property="article:tag" content="Projects introduction">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/images/Robomaster/Sentry-Architecture.png">
+
+
+<link rel="canonical" href="http://example.com/2024/02/29/Robomaster/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/02/29/Robomaster/","path":"2024/02/29/Robomaster/","title":"Robomaster Projects"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Robomaster Projects | Cunxin Fan's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Cunxin Fan's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#auotaim-module"><span class="nav-number">1.</span> <span class="nav-text">AuotAim Module</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#robot-sentry"><span class="nav-number">2.</span> <span class="nav-text">Robot Sentry</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#robot-aerial"><span class="nav-number">3.</span> <span class="nav-text">Robot Aerial</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#robot-radar"><span class="nav-number">4.</span> <span class="nav-text">Robot Radar</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Cunxin Fan</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/02/29/Robomaster/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Cunxin Fan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cunxin Fan's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Robomaster Projects | Cunxin Fan's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Robomaster Projects
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-02-29 12:00:00" itemprop="dateCreated datePublished" datetime="2024-02-29T12:00:00+08:00">2024-02-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-03-05 13:30:59" itemprop="dateModified" datetime="2024-03-05T13:30:59+08:00">2024-03-05</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>To better understand the rules, you may watch <a
+target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19V41137XZ/?spm_id_from=333.337.search-card.all.click">our
+match</a> first</p>
+<p>I'm part of the Vision Division within the Robomaster Club of
+Shanghai Jiao Tong University, where I have actively contributed to
+several key initiatives. Across all our projects except Robot Radar, we
+utilize the JETSON Orin NX developper kit to enable high performance
+computing.</p>
+<p>The duty of Vision Division focuses on specifying tasks that Robots
+will do, rather than controlling them to accomplish these tasks. In
+practice, we have made up robotic commands, which are user-defined and
+transferred via an UART communication module to a Micro-Computing Unit
+(MCU). The MCU handles the deserialization of these instructions,
+contributing to tactile robot manipulations in real time. All
+algorithmic responsibilities on the MCU-front falls under the remit of
+our club's Electronic Control Division—a team with which we consistently
+collaborate.</p>
+<h3 id="auotaim-module">AuotAim Module</h3>
+<p>The AutoAim Module represents one of our division's paramount
+contributions, and it serves as a cornerstone for majority of the robots
+we design and deploy. Its relevance becomes particularly prominent
+during Robomaster competitions where robots engage in combative
+interactions by aiming shots at each other's armored plates. We've
+enhanced our shooting precision by incorporating a Kalman Filter into
+this module. This predictive system gives us an upper hand as it
+forecasts potential routes of robot movement, thus offering valuable
+insights on the prospective locations of the armor plates. Following
+successful filtration, our shooting commands are transmitted to the MCU
+which then aligns, fires bullets with high accuracy, allowing
+significant strategic advantages over opponents.</p>
+<p>Notably, all our robotic models except the Radar come equipped with
+this integral AutoAim Module.</p>
+<h3 id="robot-sentry">Robot Sentry</h3>
+<p>The Robot Sentry project involves designing an autonomous robotic
+system. The diagram below illustrates the overall structure.</p>
+<figure>
+<img src="/assets/images/Robomaster/Sentry-Architecture.png"
+alt="Sentry Architecture" />
+<figcaption aria-hidden="true">Sentry Architecture</figcaption>
+</figure>
+<p>Beginning from the bottom, we have the Hardware Layer consisting of
+vision-related sensors like the Livox Lidar Mid360 and Hikrobot
+MV-CS016-10UC industrial camera fitted with a 6mm lens. Note that only
+vision-related are covered in the diagram. For example, IMU is ommitted
+because IMU is not vision-related and is processed by the MCU.</p>
+<p>Above the hardware stratum is the Localization Layer that houses the
+LIDAR-IMU Odometry (LIO), which works using the Iterative Closest Point
+Alignment technique to make accurate, real-time estimations of pose
+alignment between lidar points and pre-generated point cloud, initiating
+rough estimation utilizing IMU data. To optimize pose estimation, we use
+one algo variant, namely Fast-LIO, which filters and smooths out these
+computations. In detail, we have generated a <code>.pcd</code> type
+lidar point cloud object with FAST-LIO mapping. We then down-sampled the
+point cloud so as to further decrease the time-complexity of point cloud
+matching. Then we leverage re-localization feature for pinpointing the
+robot.</p>
+<p>Next comes the Navigation Layer, built upon the ROS movebase package.
+A costmap, which is basically a 2D <code>.pgm</code> map (AKA static
+layer) overlayed with layers such as obstacle and inflation. An
+abstraction into a costmap graph created by a global planner lets us
+guide the route progression through A* search algorithm. Parallelly,
+unplanned events like swiftly appearing pedestrians are tackled by a
+local planner, necessitating the inclusion of a separate obstacle layer
+for imminent challenges not originally present in the static map
+layer.</p>
+<p>Atop these systems is the Decision Layer, where a multi-state
+behavior tree manipulates navigation based on inputs fetched from a
+communal information space called 'BlackBoard'. This serves as data
+storehouse where information passed across via UART communication
+resides. Our behavioural tree employs components including Sequence
+Node, Loop Node, Action Node and Task Node—a novel component we created
+to function silently in the background. The usage varies for each node;
+Sequence nodes prioritize different tasks and halt if a task fails
+whereas Loop Nodes facilitates patrolling across multiple position.</p>
+<p>As a whole, Robot Sentry's expansive nature contributed significantly
+towards my learning experience—particularly when it came to debugging
+large-scale systems iteratively.</p>
+<h3 id="robot-aerial">Robot Aerial</h3>
+<p>In the Aerial project, our team established a fundamental setup for
+indoor localization using Visual Inertial Odometry (VIO) powered by PX4.
+By adhering to official guides, we employed the ROS package MAVROS as a
+key conduit, allowing ROS1 topics to interact with MAVLink and enabling
+effective communication with PX4. For VIO functionality, we utilized
+Intel's RealSense T265 technology.</p>
+<p>Through this scheme of operations, we successfully accomplished
+automatic self-positioning capabilities for our aerial robot model. This
+marked a significant step in enhancing drone autonomy within enclosed
+environments.</p>
+<h3 id="robot-radar">Robot Radar</h3>
+<p>As part of this project, we developed a comprehensive process to
+pinpoint the precise locations of visible robots within the world
+frame—an accomplishment realized through advanced lidar-camera fusion
+techniques. We delved into and tested several procedures for calibrating
+the camera frame and the lidar frame with respect to the global
+coordinate system. Making use of classical tools such as
+Perspective-n-Point (PnP) for cameras and Iterative Closest Point (ICP)
+for lidars, we yielded results of exceptional accuracy.</p>
+<p>The detection and tracking of all visible robots was a crucial aspect
+of our project execution. We refined our systems by employing object
+detection mechanisms using M-detector (movable object detection via
+lidar point clouds) and YOLOv9 in conjunction with ByteTrack. Once
+robots were accurately detected and tracked, their respective positions
+could be determined by performing frame transformations that leveraged
+the meticulous calibration systems we'd put in place.</p>
+<p>However, the responsibilities accompanying my role as Project Leader
+extended beyond technical advancements alone. I dedicated considerable
+time to manage our team efficiently, ensuring smooth communication
+channels between members, setting realistic deadlines, anticipating
+potential roadblocks, and having contingency plans ready beforehand. My
+focus on effective project management strategies also ensured timely
+completion of milestones, promoting proactive practices to prevent
+last-minute hitches or stressful work crunches.</p>
+<p>It was an enriching experience to lead and collaborate with
+proficient minds collectively aimed at pushing boundaries of the
+knowledge and equipments we have. Assembling these lessons from the
+ground up honed my leadership skills—guiding me toward broader
+understandings of teamwork dynamics while instilling humility from
+hands-on problem-solving experiences.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Projects-introduction/" rel="tag"># Projects introduction</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/01/13/CSAPP-DataLab/" rel="prev" title="CSAPP-DataLab 题解">
+                  <i class="fa fa-angle-left"></i> CSAPP-DataLab 题解
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Cunxin Fan</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>
