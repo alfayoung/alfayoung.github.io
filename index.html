@@ -179,7 +179,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-03-05 13:30:59" itemprop="dateModified" datetime="2024-03-05T13:30:59+08:00">2024-03-05</time>
+      <time title="Modified: 2024-03-18 21:49:47" itemprop="dateModified" datetime="2024-03-18T21:49:47+08:00">2024-03-18</time>
     </span>
 
   
@@ -255,8 +255,10 @@ abstraction into a costmap graph created by a global planner lets us
 guide the route progression through A* search algorithm. Parallelly,
 unplanned events like swiftly appearing pedestrians are tackled by a
 local planner, necessitating the inclusion of a separate obstacle layer
-for imminent challenges not originally present in the static map
-layer.</p>
+for imminent challenges not originally present in the static map layer.
+We should note that simply considering depth as obstacles may
+misinterpret slopes as obstacles. That's why we utilized ground
+segmentation algorithm to segement all the planes, including slopes.</p>
 <p>Atop these systems is the Decision Layer, where a multi-state
 behavior tree manipulates navigation based on inputs fetched from a
 communal information space called 'BlackBoard'. This serves as data
@@ -599,7 +601,7 @@ x|\)</span>。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-02-29 17:27:54" itemprop="dateModified" datetime="2024-02-29T17:27:54+08:00">2024-02-29</time>
+      <time title="Modified: 2024-03-09 18:32:41" itemprop="dateModified" datetime="2024-03-09T18:32:41+08:00">2024-03-09</time>
     </span>
 
   
@@ -618,7 +620,10 @@ x|\)</span>。</p>
 <p>答案： 第一段代码： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">10</span><br></pre></td></tr></table></figure></p>
 <p>第二段代码： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">20</span><br></pre></td></tr></table></figure></p>
 <p>为什么会产生区别呢？原来 <code>make_shared&lt;T&gt;(x)</code>
-等价于以 <span class="math inline">\(x\)</span> 为初值</p>
+等价于以 <span class="math inline">\(x\)</span>
+为初值构造一个指针，而不是构造一个绑定到 <span
+class="math inline">\(x\)</span> 上的指针。</p>
+<p>第一段代码</p>
 
       
     </div>
@@ -681,7 +686,7 @@ x|\)</span>。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-03-01 19:37:52" itemprop="dateModified" datetime="2024-03-01T19:37:52+08:00">2024-03-01</time>
+      <time title="Modified: 2024-03-13 15:18:28" itemprop="dateModified" datetime="2024-03-13T15:18:28+08:00">2024-03-13</time>
     </span>
 
   
@@ -716,6 +721,8 @@ alt="最小二乘法的限制" />
 3. 根据一个阈值，寻找与模型估计在误差范围内的所有点 4.
 判断上一步找到的点的个数是否大于阈值，如果是，则计算
 fitness，并更新最优解 5. 回到 1 进行新的一轮迭代</p>
+<p>这个算法在雷达相机匹配中的作用是，分割出一个体素中存在的平面。为什么可以实现这个功能？只要把点集的维度拓宽为
+3 维，模型从二维线性回归变到三维线性回归即可。</p>
 <h4 id="最坏情况分析">最坏情况分析</h4>
 <p>事实上，我们可以证明模型的迭代次数越多，1 就越有可能获得全部位于
 inlier 中的点，从而获得较优的模型估计。证明：</p>
